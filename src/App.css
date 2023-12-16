@@ -4,18 +4,113 @@
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-  width: 50%;
+  max-width: 50vw;
+  max-height: 50vh;
   margin: 0 auto;
-  border: 1px solid blue;
-  padding: 25px;
+  border: 3px double blue;
+  box-shadow: 5px 15px 5px blue;
+  padding: 50px;
+  margin: 50px auto;
+}
+
+.App h1 {
+  color: blue;
+  font-size: 50px;
+  margin: 0;
+}
+
+.App h4 {
+  font-size: 20px;
+  margin: 0 auto 20px;
+}
+
+.weather {
+  width: 100%;
 }
 
 .form {
   display: flex;
-  flex-direction: column;
+  max-width: 60%;
+  margin: 0 auto;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
   font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.form input[type="search"],
+.form input[type="submit"] {
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid lightblue;
+  font-size: 15px;
+  color: blue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.form input[type="search"] {
+  width: 220px;
+  text-indent: 10px;
+}
+.form input[type="submit"] {
+  width: 120px;
+  background-color: lightblue;
+}
+.form input[type="search"]:focus,
+.form input[type="search"]:focus-visible,
+.form input[type="search"]:hover {
+  background-color: transparent;
+  border: 2px solid blue;
+  outline: none;
+}
+
+.form input[type="submit"]:hover {
+  border: 2px solid blue;
+}
+
+.error {
+  color: coral;
+  margin: 0 auto;
+  font-size: 15px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 40px auto;
+}
+.description ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.description .city {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.description .description-text {
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px 0;
+}
+
+.description-additional {
+  min-width: 40%;
+}
+
+.city span {
+  cursor: pointer;
+}
+
+.active {
+  color: blue;
+  text-decoration: underline;
 }
 
 .footer {
